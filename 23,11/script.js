@@ -9,8 +9,8 @@
 let firstDot = [2, 2],
   secondDot = [4, 2];
 
-function section(a, b) {
-  console.log(Math.sqrt((a[0] - a[1]) ** 2 + (b[0] - b[1]) ** 2));
+function section(x, y) {
+  console.log(Math.sqrt((x[0] - x[1]) ** 2 + (y[0] - y[1]) ** 2));
 };
 
 section(firstDot, secondDot);
