@@ -8,7 +8,6 @@
 
 let firstDot = [2, 2],
   secondDot = [4, 2],
-  secLength = null;
 
 function section(a, b) {
   console.log(Math.sqrt((a[0] - a[1]) ** 2 + (b[0] - b[1]) ** 2));
