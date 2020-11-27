@@ -10,7 +10,7 @@ let firstDot = [2, 2],
   secondDot = [4, 2];
 
 function section(x, y) {
-  console.log(Math.sqrt((x[0] - x[1]) ** 2 + (y[0] - y[1]) ** 2));
+  return(Math.sqrt((x[0] - x[1]) ** 2 + (y[0] - y[1]) ** 2));
 };
 
 section(firstDot, secondDot);
