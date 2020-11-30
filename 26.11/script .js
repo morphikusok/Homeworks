@@ -36,14 +36,11 @@ function fill(arrLenght, arrValue) {
 только с элементами в обратном порядке. */
 
 function reverse(array) {
+  let swap = []
   for (let i = 0; i < array.length; i++) {
-    for (let i = 0; i < array.length - 1; i++) {
-      let swap = array[i];
-      array[i] = array[i + 1];
-      array[i + 1] = swap;
-    };
+    swap.unshift(array[i])
   };
-  return array;
+  return swap;
 };
 
 console.log(reverse(arr));
@@ -57,7 +54,7 @@ console.log(reverse(arr));
 function compact(array) {
   let clearArr = [];
   for (i = 0; i < array.length; i++) {
-    if (array[i] != false && array[i] != undefined && array[i] != ' ' && array[i] != 0 && array[i] != null) {
+    if (typeof (array[i]) == 'number' && array[i] != 0) {
       clearArr.push(array[i]);
     };
   };
