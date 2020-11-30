@@ -54,7 +54,7 @@ console.log(reverse(arr));
 function compact(array) {
   let clearArr = [];
   for (i = 0; i < array.length; i++) {
-    if (typeof (array[i]) == 'number' && array[i] != 0) {
+    if (typeof(array[i]) == 'number' && array[i] != 0) {
       clearArr.push(array[i]);
     };
   };
