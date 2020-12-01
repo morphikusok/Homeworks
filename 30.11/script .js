@@ -58,10 +58,8 @@ function compare(str1, str2) {
   if (str1.length != str2.length) {
     return ('Строки не равны!');
   } else {
-    var newStr1 = str1.toLowerCase();
-    var newStr2 = str2.toLowerCase();
     for (i = 0; i < str1.length; i++) {
-      if (newStr1[i] != newStr2[i]) {
+      if (str1[i].toLowerCase() != str2[i].toLowerCase()) {
         return ('Строки не равны!');
       }
     }
