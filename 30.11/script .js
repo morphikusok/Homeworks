@@ -41,8 +41,8 @@ function checkIfEnds(str1, str2) {
   } else {
     var newStr1Array = [];
     var newStr2Array = [];
-    for (i = 0; i < str1.length; i++) newStr1Array.push(str1[str1.length - i]); // здесь я "перевернул" строки и запихнул в массивы, что бы сравнивать сначала
-    for (i = 0; i < str2.length; i++) newStr2Array.push(str2[str2.length - i]);
+    for (i = 0; i < str1.length; i++) newStr1Array.unshift(str1[i]); 
+    for (i = 0; i < str2.length; i++) newStr2Array.unshift(str2[i]);
     for (i = 0; i < newStr2Array.length; i++) {
       if (newStr1Array[i] != newStr2Array[i]) {
         return false;
