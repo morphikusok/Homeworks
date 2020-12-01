@@ -39,12 +39,12 @@ function checkIfEnds(str1, str2) {
   if (str1.length < str2.length) {
     return false;
   } else {
-    var newStr1 = [];
-    var newStr2 = [];
-    for (i = 0; i < str1.length; i++) newStr1.push(str1[str1.length - i]); // здесь я "перевернул" строки и запихнул в массивы, что бы сравнивать сначала
-    for (i = 0; i < str2.length; i++) newStr2.push(str2[str2.length - i]);
-    for (i = 0; i < newStr2.length; i++) {
-      if (newStr1[i] != newStr2[i]) {
+    var newStr1Array = [];
+    var newStr2Array = [];
+    for (i = 0; i < str1.length; i++) newStr1Array.push(str1[str1.length - i]); // здесь я "перевернул" строки и запихнул в массивы, что бы сравнивать сначала
+    for (i = 0; i < str2.length; i++) newStr2Array.push(str2[str2.length - i]);
+    for (i = 0; i < newStr2Array.length; i++) {
+      if (newStr1Array[i] != newStr2Array[i]) {
         return false;
       }
     }
