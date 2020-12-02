@@ -5,11 +5,9 @@ let string = 'Hello, Worldrldrld',
   string1 = 'rld';
 
 function search(str1, str2) {
-  let counter = 0;
-  str1 = str1.split(str2);
-  for (i = 0; i < str1.length; i++) {
-    if (str1[i] == "") counter++;
-  }
+  let strSplitted = str1.split(str2),
+    counter = strSplitted.length - 1;
+
   return counter;
 }
 
