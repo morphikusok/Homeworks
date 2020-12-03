@@ -34,20 +34,9 @@ let s = 'Hello, world',
   st = 'world';
 
 function checkIfEnds(str1, str2) {
-  if (str1.length < str2.length) {
-    return false;
-  } else {
-    var newStr1Array = [];
-    var newStr2Array = [];
-    for (i = 0; i < str1.length; i++) newStr1Array.unshift(str1[i]); 
-    for (i = 0; i < str2.length; i++) newStr2Array.unshift(str2[i]);
-    for (i = 0; i < newStr2Array.length; i++) {
-      if (newStr1Array[i] != newStr2Array[i]) {
-        return false;
-      }
-    }
-  } return true;
+  return str1.substring(str1.length - str2.length) === str2;
 }
+
 console.log(checkIfEnds(s, st));
 
 // Написать функцию compare, которая проверяет на равенство две строки, причем проверка не должна зависеть от регистра.
