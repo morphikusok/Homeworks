@@ -14,14 +14,14 @@ class GameOfWords {
       }
       // проверка на соответствие последней буквы
       if (this.words.length > 0) {
-        const lastWord = this.words[this.words.length - 1].toLowerCase();
-        if (lastWord.substring(lastWord.length - 2, lastWord.length - 1) !== word.toLowerCase().substring(0, 1)) {
+        const lastWord = this.words[this.words.length - 1];
+        if (lastWord[lastWord.length - 1] !== word[0] .toLowerCase()) {
           this.gameOver = true;
           return 'Game over';
         }
       }
 
-      this.words = [...this.words, word];
+      this.words = [...this.words, word.toLowerCase()];
       return this.words;
     }
     return 'Game is over. You must to restart game.'
@@ -36,6 +36,6 @@ class GameOfWords {
 
 const ng = new GameOfWords();
 console.log(ng.play('Booss'));
-console.log(ng.play('Supra'));
+console.log(ng.play('upra'));
 console.log(ng.restart());
 console.log(ng.play('Supra'));
