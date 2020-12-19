@@ -88,10 +88,6 @@ function exerciseThree(books) {
     const booksDiscr = document.createElement('p');
     const booksCover = document.createElement('img');
 
-    booksListItem.style.padding = '10px';
-    booksCover.style.height = '300px';
-    booksCover.style.width = '200px';
-
     content.appendChild(booksList);
     booksList.appendChild(booksListItem);
     booksListItem.appendChild(booksDiscr);
@@ -100,6 +96,10 @@ function exerciseThree(books) {
     booksDiscr.innerText = `${book.title} - ${book.author}`;
 
     booksCover.src = `img/${book.title}.png`;
+
+    booksListItem.style.padding = '10px';
+    booksCover.style.height = '300px';
+    booksCover.style.width = '200px';
 
     if (book.alreadyRead) {
       booksListItem.style.backgroundColor = 'green';
