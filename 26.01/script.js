@@ -31,10 +31,10 @@ console.log(findTime('Breakfast at 09:00 in the room 123: 456')[0]); */
 console.log(excludeWords(['cucumber', 'array', 'web', 'cider'])); */
 
 // 4)
-function letterOrder(str) {
-  const regexp = /\w*?a\w*?u\w*?c/;
+/* function letterOrder(str) {
+  const regexp = /\w*a\w*u\w*c/;
 
   return regexp.test(str);
 }
 
-console.log(letterOrder('aufdfsdc'))
+console.log(letterOrder('aufdfsdc')); */
